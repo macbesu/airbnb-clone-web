@@ -1,11 +1,11 @@
 import { ApolloClient } from 'apollo-client';
-import { InMemoryCache } from 'apollo-cache-inmemory';
 import { HttpLink } from 'apollo-link-http';
+import { InMemoryCache } from 'apollo-cache-inmemory';
 
 export const client = new ApolloClient({
+  cache: new InMemoryCache(),
   link: new HttpLink({
-    uri: 'https://localhost:4000',
-    credentials: 'include'
+    credentials: 'include',
+    uri: 'https://localhost:4000'
   }),
-  cache: new InMemoryCache()
 });
