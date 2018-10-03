@@ -10,6 +10,10 @@
   "rules": {
     "ordered-imports": false,
     "named-imports-order": "any",
-    "object-literal-sort-keys": false
+    "object-literal-sort-keys": false,
+    "member-access": false,
+    "no-console": false,
+    "no-submodule-imports": false,
+    "interface-name": false
   }
 }
