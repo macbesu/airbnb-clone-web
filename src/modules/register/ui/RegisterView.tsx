@@ -19,7 +19,7 @@ class C extends React.PureComponent<FormikProps<FormValues> & Props> {
 
     return (
       <form style={{ display: 'flex', justifyContent: 'center' }} onSubmit={handleSubmit}>
-        <div className="login-form" style={{ width: 400 }}>
+        <div className="login-form" style={{ width: 400, marginTop: 40 }}>
           <FormItem>
             <Input
               name="email"
