@@ -6,6 +6,6 @@ export const client = new ApolloClient({
   cache: new InMemoryCache(),
   link: new HttpLink({
     credentials: 'include',
-    uri: 'https://localhost:4000'
+    uri: 'http://localhost:4000'
   }),
 });
